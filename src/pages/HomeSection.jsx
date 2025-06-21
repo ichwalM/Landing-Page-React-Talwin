@@ -1,6 +1,6 @@
 function HomeSection() {
     return (
-        <section className="py-20 bg-blue-50 h-screen flex items-center justify-center">
+        <section className="bg-blue-50 h-screen flex items-center justify-center">
             <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 sm:flex-row items-center justify-between gap-10">
                 <div className="mask-b-from-20% mask-b-to-80%  block lg:hidden md:hidden">
                     <div className="w-full max-w-lg md:h-86 bg-blue-200 rounded-lg flex items-center justify-center text-blue-800 text-xl font-semibold">
