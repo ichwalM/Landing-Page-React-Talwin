@@ -33,13 +33,13 @@ function HomeSection() {
                             />
                     </h1>
                     <p 
-                    data-aos="fade-left"
+                    data-aos="fade-right"
                     data-aos-delay="150"
                     className="text-lg text-gray-600 mb-6">
                         Junior Frontend Developer and junior network administrator with a passion for creating useful and secure systems.
                     </p>
                     <button 
-                    data-aos="fade-left"
+                    data-aos="fade-right"
                     data-aos-delay="200"
                     className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
                         Contact Me
@@ -47,7 +47,7 @@ function HomeSection() {
                 </div>
                 <div className="xl:mask-l-from-40% mask-l-to-100% bg-[url(/img/mountains.jpg)] rounded hidden md:block ">
                     <div
-                    data-aos="fade-right"
+                    data-aos="fade-left"
                     data-aos-delay="250"
                     className="w-full max-w-lg md:bg-blue-200 rounded-lg flex items-center justify-center text-blue-800 text-xl font-semibold">
                         <img className="rounded" src="/images/heroProfile.png" alt="" />
