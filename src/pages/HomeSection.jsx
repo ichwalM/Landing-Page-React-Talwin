@@ -1,3 +1,6 @@
+import React from "react";
+import { ReactTyped } from "react-typed";
+
 function HomeSection() {
     return (
         <section className="bg-blue-50 h-screen flex items-center justify-center">
@@ -11,11 +14,23 @@ function HomeSection() {
                     </div>
                 </div>
                 <div className="md:w-1/2 md:text-left">
-                    <h1
-                    data-aos="fade-left"
-                    data-aos-delay="100"
-                    className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">
-                        Hello <br className="hidden md:block" /> I'm Ichwal
+                    <h1 className="text-4xl md:text-5xl font-bold text-text-dark leading-tight">
+                        <ReactTyped
+                            className="hidden-typed-cursor"
+                            strings={["Hello"]}
+                            typeSpeed={50} 
+                            />
+                        
+                    </h1>
+                    <h1 className="text-4xl md:text-5xl font-bold text-text-dark leading-tight min-h-[60px]">
+                        <ReactTyped
+                            className="hidden-typed-cursor"
+                            strings={["I'Am Ichwal"]}
+                            typeSpeed={60} 
+                            backSpeed={50}
+                            backDelay={2000}
+                            loop
+                            />
                     </h1>
                     <p 
                     data-aos="fade-left"
