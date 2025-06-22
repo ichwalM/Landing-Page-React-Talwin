@@ -55,7 +55,7 @@ const Header = ({ activeTab, setActiveTab }) => {
                                 <a
                                     onClick={() => handleNavLinkClick("home")}
                                     className={`
-                                    block py-2 px-3 rounded-sm md:bg-transparent md:p-0
+                                    cursor-pointer block py-2 px-3 rounded-sm md:bg-transparent md:p-0
                                     ${activeTab === "home"
                                             ? "text-white bg-blue-700 md:text-blue-700 md:dark:text-blue-500"
                                             : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -71,7 +71,7 @@ const Header = ({ activeTab, setActiveTab }) => {
                                 <a
                                     onClick={() => handleNavLinkClick("about")}
                                     className={`
-                                    block py-2 px-3 rounded-sm md:bg-transparent md:p-0
+                                    cursor-pointer block py-2 px-3 rounded-sm md:bg-transparent md:p-0
                                     ${activeTab === "about"
                                             ? "text-white bg-blue-700 md:text-blue-700 md:dark:text-blue-500"
                                             : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -86,7 +86,7 @@ const Header = ({ activeTab, setActiveTab }) => {
                                 <a
                                     onClick={() => handleNavLinkClick("services")}
                                     className={`
-                                    block py-2 px-3 rounded-sm md:bg-transparent md:p-0
+                                    cursor-pointer block py-2 px-3 rounded-sm md:bg-transparent md:p-0
                                     ${activeTab === "services"
                                             ? "text-white bg-blue-700 md:text-blue-700 md:dark:text-blue-500"
                                             : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -101,7 +101,7 @@ const Header = ({ activeTab, setActiveTab }) => {
                                 <a
                                     onClick={() => handleNavLinkClick("contact")}
                                     className={`
-                                    block py-2 px-3 rounded-sm md:bg-transparent md:p-0
+                                    cursor-pointer block py-2 px-3 rounded-sm md:bg-transparent md:p-0
                                     ${activeTab === "contact"
                                             ? "text-white bg-blue-700 md:text-blue-700 md:dark:text-blue-500"
                                             : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
