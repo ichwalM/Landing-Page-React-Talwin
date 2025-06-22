@@ -7,7 +7,6 @@ import './App.css';
 
 function App() {
   const [activeTab, setActiveTab] = useState("home");
-
   useEffect(() => {
     AOS.init({
       offset: 120,
