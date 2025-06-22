@@ -9,7 +9,6 @@ function ContactSection() {
 
 export default ContactSection
 
-
 const MyComponent = () => (
   <div className='my-20'>
     <ReactTyped strings={["I'Am Ichwal"]} typeSpeed={40}  backSpeed={50} loop cursor={false} />
