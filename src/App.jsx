@@ -1,16 +1,32 @@
-import React from 'react'
-import Header from './components/Header'
-import Layout from './components/layouts/Layout'
-import './App.css'
+import React, { useState, useEffect } from "react";
+import Header from "./components/Header";
+import Layout from "./components/layouts/Layout";
+import './App.css';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const App = () => {
+function App() {
+  const [activeTab, setActiveTab] = useState("home");
+
+  useEffect(() => {
+    AOS.init({
+      offset: 120,
+      duration: 800,
+      easing: "ease-in-out",
+      delay: 50,
+      once: true,
+      mirror: false,
+      anchorPlacement: "top-bottom",
+    });
+  }, []);
+
   return (
-    <div className='min-h-screen bg-gray-50'>
-      <Header />
-      <Layout />
+    <div className="min-h-screen bg-gray-50">
+      <Header activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Layout page={activeTab} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
