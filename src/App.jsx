@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Layout from "./components/layouts/Layout";
-import './App.css';
-
 import AOS from "aos";
 import "aos/dist/aos.css";
+import './App.css';
 
 function App() {
   const [activeTab, setActiveTab] = useState("home");
