@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react'
-import HomeSection from '../../pages/HomeSection'
-import AboutSection from '../../pages/AboutSection'
-import ServiceSection from '../../pages/ServiceSection';
-import ContactSection from '../../pages/ContactSection';
+import HomeSection from '../pages/HomeSection'
+import AboutSection from '../pages/AboutSection'
+import ServiceSection from '../pages/ServiceSection';
+import ContactSection from '../pages/ContactSection';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
