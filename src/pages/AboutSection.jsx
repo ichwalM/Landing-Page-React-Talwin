@@ -68,10 +68,7 @@ function AboutSection({ className }) {
                     className="w-3 h-3 rounded-full"
                     style={{ backgroundColor: '#50B7F0' }}
                   ></div>
-                  <div
-                    className="w-3 h-3 rounded-full"
-                    style={{ backgroundColor: '#8E44AD' }}
-                  ></div>
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
                   <div
                     className="w-3 h-3 rounded-full"
                     style={{ backgroundColor: '#FFFFFF' }}
@@ -101,9 +98,9 @@ function AboutSection({ className }) {
           </div>
         </div>
 
-        <div className="absolute top-20 left-10 w-20 h-20 rounded-full opacity-20" style={{ backgroundColor: '#50B7F0' }}></div>
-        <div className="absolute top-40 right-20 w-16 h-16 rounded-full opacity-20" style={{ backgroundColor: '#8E44AD' }}></div>
-        <div className="absolute bottom-20 left-1/4 w-12 h-12 rounded-full opacity-20" style={{ backgroundColor: '#50B7F0' }}></div>
+        <div className="absolute top-20 left-10 w-20 h-20 rounded-full opacity-20 bg-sky-400"></div>
+        <div className="absolute top-40 right-20 w-16 h-16 rounded-full opacity-20 bg-red-500"></div>
+        <div className="absolute bottom-20 left-1/4 w-12 h-12 rounded-full opacity-20 bg-sky-300"></div>
       </div>
     </section>
   );
