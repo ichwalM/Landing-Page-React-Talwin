@@ -1,17 +1,12 @@
 import React from 'react';
-import { ReactTyped } from "react-typed";
+import HeroTitle from '../components/heroTitle';
 
 function AboutSection({ className }) {
   return (
     <section className="min-h-screen pt-5" style={{ backgroundColor: '#E6F0F8' }}>
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-16">
-          <h1
-          data-aos="fade-up"
-          data-aos-delay="100"
-          className="text-4xl font-bold text-gray-600 mb-8 tracking-wider">
-            ABOUT ME
-          </h1>
+          <HeroTitle heading="About"/>
         </div>
 
         <div className="max-w-6xl mx-auto">

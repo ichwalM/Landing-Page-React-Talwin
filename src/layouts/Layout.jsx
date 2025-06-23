@@ -3,6 +3,7 @@ import HomeSection from '../pages/HomeSection'
 import AboutSection from '../pages/AboutSection'
 import ServiceSection from '../pages/ServiceSection';
 import ContactSection from '../pages/ContactSection';
+import SkillSection from '../pages/SkillSection';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -23,6 +24,7 @@ function Layout(props) {
     else if(props.page === 'about') return <AboutSection className="pt-20"/>;
     else if(props.page === 'services') return <ServiceSection />
     else if(props.page === 'contact') return <ContactSection />
+    else if(props.page === 'skill') return <SkillSection />
 }
 
 export default Layout
