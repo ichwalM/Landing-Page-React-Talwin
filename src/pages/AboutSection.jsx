@@ -1,9 +1,9 @@
 import React from 'react';
 import HeroTitle from '../components/heroTitle';
 
-function AboutSection({ className }) {
+const  AboutSection = ({ className }) => {
   return (
-    <section className="min-h-screen pt-5" style={{ backgroundColor: '#E6F0F8' }}>
+    <section className="min-h-screen pt-5 bg-blue-50">
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-16">
           <HeroTitle heading="About"/>
@@ -60,11 +60,18 @@ function AboutSection({ className }) {
 
                 <div className="flex space-x-4 mt-8">
                   <div
+                  data-aos="fade-up"
+                  data-aos-delay="100"
                     className="w-3 h-3 rounded-full"
                     style={{ backgroundColor: '#50B7F0' }}
                   ></div>
-                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
                   <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div
+                  data-aos="fade-up"
+                  data-aos-delay="400"
                     className="w-3 h-3 rounded-full"
                     style={{ backgroundColor: '#FFFFFF' }}
                   ></div>
@@ -78,7 +85,7 @@ function AboutSection({ className }) {
                   className="rounded-xl p-4 text-center shadow-xl hover:shadow-xl transition-shadow duration-300"
                 >
                   <h3 className="font-bold text-lg">Informatics Engineering</h3>
-                  <p className="text-xl font-semibold">2023</p>
+                  <p className="text-xl font-semibold">2023-2025</p>
                 </div>
                 <div
                 data-aos="fade-up"
@@ -93,9 +100,15 @@ function AboutSection({ className }) {
           </div>
         </div>
 
-        <div className="absolute top-20 left-10 w-20 h-20 rounded-full opacity-20 bg-sky-400"></div>
-        <div className="absolute top-40 right-20 w-16 h-16 rounded-full opacity-20 bg-red-500"></div>
-        <div className="absolute bottom-20 left-1/4 w-12 h-12 rounded-full opacity-20 bg-sky-300"></div>
+        <div
+        data-aos="fade-up"
+        data-aos-delay="200"
+        className="absolute top-20 left-10 w-20 h-20 rounded-full opacity-20 bg-sky-400"></div>
+        <div
+        data-aos="fade-up"
+        data-aos-delay="300"
+        className="absolute top-40 right-20 w-16 h-16 rounded-full opacity-20 bg-red-500"></div>
+        {/* <div className="absolute bottom-20 left-1/4 w-12 h-12 rounded-full opacity-20 bg-sky-300"></div> */}
       </div>
     </section>
   );
