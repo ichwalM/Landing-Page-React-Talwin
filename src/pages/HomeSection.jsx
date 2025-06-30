@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
+import HeroIcon from '../components/HeroIcon'
 
 function HomeSection() {
     return (
@@ -23,7 +24,7 @@ function HomeSection() {
                     <h1
                     data-aos="fade-up"
                     data-aos-delay="200"
-                    className="text-4xl md:text-5xl font-bold text-text-dark leading-tight min-h-[60px]">
+                    className="text-4xl md:text-5xl font-bold text-text-dark leading-tight min-h-[60px] mb-3">
                         <ReactTyped
                             className="hidden-typed-cursor"
                             strings={["I'Am Ichwal"]}
@@ -36,14 +37,15 @@ function HomeSection() {
                     <p 
                     data-aos="fade-up"
                     data-aos-delay="300"
-                    className="text-lg text-gray-600 mb-6">
+                    className="text-lg text-gray-600 mb-3">
                         Junior Frontend Developer and junior network administrator with a passion for creating useful and secure systems.
                     </p>
+                    <HeroIcon className={"mb-3"}/>
                     <button 
                     data-aos="fade-up"
                     data-aos-delay="400"
-                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
-                        Contact Me
+                    className="bg-gray-900 text-white border-2 hover:bg-blue-50 hover:text-gray-900 hover:border-gray-900 font-bold py-1 px-8 rounded-[4px] transition duration-300 shadow-lg">
+                        Download My CV
                     </button>
                 </div>
                 <div className="xl:mask-l-from-40% mask-l-to-100% bg-[url(/img/mountains.jpg)] rounded hidden md:block ">
