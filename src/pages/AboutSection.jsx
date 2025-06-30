@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroTitle from '../components/heroTitle';
 
-const  AboutSection = ({ className }) => {
+const  AboutSection = () => {
   return (
     <section className="min-h-screen pt-5 bg-blue-50">
       <div className="container mx-auto px-4 py-12">
