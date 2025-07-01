@@ -4,6 +4,7 @@ import Layout from "./layouts/Layout";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './App.css';
+import LyoutsScrol from "./layouts/LyoutsScrol";
 
 function App() {
   const [activeTab, setActiveTab] = useState("home");
@@ -24,6 +25,7 @@ function App() {
       <Header activeTab={activeTab} setActiveTab={setActiveTab} />
         <main>
           <Layout page={activeTab} />
+          {/* <LyoutsScrol /> */}
         </main>
     </div>
   );
