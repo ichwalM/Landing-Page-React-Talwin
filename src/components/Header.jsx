@@ -1,39 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Logo from "./Logo";
 
-import { 
-    FaHome, 
-    FaUser, 
-    FaFolderOpen, 
-    FaBriefcase, 
-    FaTools,     
-    FaQuoteRight, 
-    FaEnvelope,
-    FaCode,      
-    FaBars,      
-    FaTimes      
-} from 'react-icons/fa'; 
-
-function Header({ activeTab, setActiveTab }) {
+const Header = ({ activeTab, setActiveTab }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    
     const handleNavLinkClick = (tabName) => {
         setActiveTab(tabName);    
         setIsMenuOpen(false);     
     };
-
     const handleMenuToggle = () => {
         setIsMenuOpen(!isMenuOpen); 
     };
-    
-    const navLinks = [
-        { name: 'Home', icon: FaHome, tab: 'home' },
-        { name: 'About', icon: FaUser, tab: 'about' },
-        { name: 'Projects', icon: FaFolderOpen, tab: 'projects' },
-        { name: 'Experience', icon: FaBriefcase, tab: 'experience' },
-        { name: 'Skills', icon: FaTools, tab: 'skills' },
-        { name: 'Testimonials', icon: FaQuoteRight, tab: 'testimonials' },
-        { name: 'Contact', icon: FaEnvelope, tab: 'contact' },
-    ];
-
     return (
         <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 shadow-md">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">

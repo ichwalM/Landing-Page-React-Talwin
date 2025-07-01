@@ -44,8 +44,8 @@ function HomeSection() {
                     <button 
                     data-aos="fade-up"
                     data-aos-delay="400"
-                    className="bg-gray-900 text-white border-2 hover:bg-blue-50 hover:text-gray-900 hover:border-gray-900 font-bold py-1 px-8 rounded-[4px] transition duration-300 shadow-lg">
-                        Download My CV
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
+                        Contact Me
                     </button>
                 </div>
                 <div className="xl:mask-l-from-40% mask-l-to-100% bg-[url(/img/mountains.jpg)] rounded hidden md:block ">
