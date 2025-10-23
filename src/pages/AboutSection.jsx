@@ -1,9 +1,12 @@
 import React from 'react';
 import HeroTitle from '../components/heroTitle';
 
-const  AboutSection = () => {
+const  AboutSection = ({isDark}) => {
   return (
-    <section className="min-h-screen pt-5 bg-blue-50">
+    <section 
+    // className="min-h-screen pt-5 bg-blue-50"
+    className={`min-h-screen pt-5 transition-colors duration-500 ${isDark ? 'bg-gray-900' : 'bg-blue-50'}`}
+    >
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-16">
           <HeroTitle heading="About"/>
@@ -100,15 +103,6 @@ const  AboutSection = () => {
           </div>
         </div>
 
-        <div
-        data-aos="fade-up"
-        data-aos-delay="200"
-        className="absolute top-20 left-10 w-20 h-20 rounded-full opacity-20 bg-sky-400"></div>
-        <div
-        data-aos="fade-up"
-        data-aos-delay="300"
-        className="absolute top-40 right-20 w-16 h-16 rounded-full opacity-20 bg-red-500"></div>
-        {/* <div className="absolute bottom-20 left-1/4 w-12 h-12 rounded-full opacity-20 bg-sky-300"></div> */}
       </div>
     </section>
   );
