@@ -1,6 +1,7 @@
 import { GraduationCap, Briefcase, Calendar, MapPin } from 'lucide-react';
+import HeroTitle from '../components/heroTitle';
 
-const ExperienceTimeline = ({isDark}) => {
+const ExperienceTimeline = ({isDark, id}) => {
     // const [isDark, setIsDark] = useState(true);
 
     const experiences = [
@@ -99,19 +100,13 @@ const ExperienceTimeline = ({isDark}) => {
     );
 
     return (
-        <div className={`min-h-screen transition-colors duration-500 ${isDark ? 'bg-gray-900' : 'bg-blue-50'}`}>
+        <section id={id} className={`min-h-screen overflow-x-hidden transition-colors duration-500 ${isDark ? 'bg-gray-900' : 'bg-blue-50'}`}>
             <div className="container mx-auto px-4 py-12">
                 <div className="flex justify-between items-center mb-12">
-                    <div data-aos="fade-right">
-                        <h1 className={`text-4xl md:text-5xl font-bold mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
-                            Perjalanan Saya
-                        </h1>
-                        <p className={`text-lg ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                            Timeline Pendidikan & Pengalaman Magang
-                        </p>
+                    <div data-aos="fade-up" className="text-right">
+                        <HeroTitle isDark={isDark} heading="Experience & Education" />
                     </div>
                 </div>
-
                 {/* Kontainer Timeline */}
                 <div className="relative w-full md:w-10/12 mx-auto">
                     {/* Garis Vertikal (tengah timeline) */}
@@ -125,7 +120,7 @@ const ExperienceTimeline = ({isDark}) => {
                     {/* Isi Timeline */}
                     <div className="space-y-12 md:space-y-0">
                         {experiences.map((exp, index) => (
-                            <div key={exp.id} data-aos={index % 2 === 0 ? 'fade-left' : 'fade-right'}>
+                            <div key={exp.id} data-aos={index % 2 === 0 ? 'fade-up' : 'fade-up'}>
                                 {/* MOBILE */}
                                 <div className="md:hidden flex items-start gap-4 mb-8">
                                     <div
@@ -187,7 +182,7 @@ const ExperienceTimeline = ({isDark}) => {
                     <p className={`text-lg ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Terus Berkembang & Belajar 🚀</p>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

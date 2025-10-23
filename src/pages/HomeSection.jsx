@@ -2,9 +2,9 @@ import React from "react";
 import { ReactTyped } from "react-typed";
 import HeroIcon from '../components/HeroIcon'
 
-function HomeSection({isDark}) {
+function HomeSection({isDark, id}) {
     return (
-        <section className={`pb-10 h-screen flex items-center justify-center transition-colors duration-500 ${isDark ? 'bg-gray-900' : 'bg-blue-50'}` }>
+        <section id={id} className={`pb-10 h-screen flex items-center justify-center transition-colors duration-500 ${isDark ? 'bg-gray-900' : 'bg-blue-50'}` }>
             <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 sm:flex-row items-center justify-between gap-10">
                 <div className="mask-b-from-20% mask-b-to-80%  block lg:hidden md:hidden">
                     <div

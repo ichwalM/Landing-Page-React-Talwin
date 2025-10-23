@@ -8,12 +8,12 @@ import LyoutsScrol from "./layouts/LyoutsScrol";
 
 function App() {
   const [activeTab, setActiveTab] = useState("home");
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   useEffect(() => {
     AOS.init({
       offset: 120,
       duration: 800,
-      once: true, // Sebaiknya 'true' untuk portofolio
+      once: true, 
     });
   }, []);
   useEffect(() => {
@@ -21,7 +21,7 @@ function App() {
   }, [isDark]);
 
   return (
-    <div className="bg-gray-50">
+    <div className={`App transition-colors duration-500 ${isDark ? 'bg-gray-900' : 'bg-blue-50'}`}>
       <Header
       activeTab={activeTab}
       setActiveTab={setActiveTab}

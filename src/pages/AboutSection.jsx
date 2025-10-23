@@ -1,17 +1,13 @@
 import React from 'react';
 import HeroTitle from '../components/heroTitle';
-
-const  AboutSection = ({isDark}) => {
+const  AboutSection = ({isDark, id}) => {
   return (
     <section 
-    // className="min-h-screen pt-5 bg-blue-50"
+    id={id}
     className={`min-h-screen pt-5 transition-colors duration-500 ${isDark ? 'bg-gray-900' : 'bg-blue-50'}`}
     >
       <div className="container mx-auto px-4 py-12">
-        <div className="text-center mb-16">
-          <HeroTitle heading="About"/>
-        </div>
-
+        <HeroTitle isDark={isDark} heading="About"/>
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
@@ -35,11 +31,11 @@ const  AboutSection = ({isDark}) => {
                 <h2
                 data-aos="fade-up"
                 data-aos-delay="100"
-                className="text-4xl font-bold mb-6 text-gray-600">
+                className={`text-4xl font-bold mb-6 ${isDark ? 'text-white' : 'text-gray-900'}`}>
                   Hi, I'm Ichwal
                 </h2>
                 <div
-                  className="text-lg leading-relaxed space-y-4 text-gray-600"
+                  className={`text-lg leading-relaxed space-y-4 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}
                 >
                   <p
                   data-aos="fade-up"
@@ -65,23 +61,21 @@ const  AboutSection = ({isDark}) => {
                   <div
                   data-aos="fade-up"
                   data-aos-delay="100"
-                    className="w-3 h-3 rounded-full"
-                    style={{ backgroundColor: '#50B7F0' }}
+                    className={`w-3 h-3 rounded-full ${isDark ? 'bg-gray-300' : 'bg-gray-700'}`}
                   ></div>
                   <div
                   data-aos="fade-up"
                   data-aos-delay="300"
-                  className="w-3 h-3 rounded-full bg-red-500"></div>
+                  className={`w-3 h-3 rounded-full ${isDark ? 'bg-red-500' : 'bg-gray-700'}`}></div>
                   <div
                   data-aos="fade-up"
                   data-aos-delay="400"
-                    className="w-3 h-3 rounded-full"
-                    style={{ backgroundColor: '#FFFFFF' }}
+                    className={`w-3 h-3 rounded-full ${isDark ? 'bg-indigo-600' : 'bg-gray-700'}`}
                   ></div>
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4 text-gray-600">
+              <div className={`grid grid-cols-2 gap-4 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                 <div
                 data-aos="fade-up"
                 data-aos-delay="500"
