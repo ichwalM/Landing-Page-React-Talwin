@@ -177,10 +177,6 @@ const ExperienceTimeline = ({isDark, id}) => {
                         ))}
                     </div>
                 </div>
-
-                <div className="text-center mt-16" data-aos="fade-up">
-                    <p className={`text-lg ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Terus Berkembang & Belajar 🚀</p>
-                </div>
             </div>
         </section>
     );

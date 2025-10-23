@@ -1,6 +1,11 @@
 import React from 'react';
 import HeroTitle from '../components/heroTitle';
 const  AboutSection = ({isDark, id}) => {
+  const paragraf = [
+      "As an Informatics Engineering student, I am driven by a deep passion for solving problems through technology. I currently work as a freelance Full Stack Web Developer, specializing in the Laravel ecosystem for the backend and React.js for the frontend. I am obsessed with a good developer experience, which is why I consistently rely on Tailwind CSS for rapid styling and MySQL for efficient data management.",
+      "My curiosity doesn't stop at writing code. I believe modern developers must understand the infrastructure where their applications run. Therefore, I also delve into system administration, including containerization with Docker, Ubuntu server management, and Proxmox virtualization. My additional expertise in MikroTik and Cisco network configuration gives me a comprehensive, end-to-end understanding of a digital system.",
+      "This portfolio is part of my personal branding, documenting the projects I have worked on. I am always enthusiastic about learning new things and am currently open to challenging freelance collaborations.",
+  ];
   return (
     <section 
     id={id}
@@ -35,25 +40,25 @@ const  AboutSection = ({isDark, id}) => {
                   Hi, I'm Ichwal
                 </h2>
                 <div
-                  className={`text-lg leading-relaxed space-y-4 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}
+                  className={`text-md leading-relaxed space-y-4 text-justify ${isDark ? 'text-gray-300' : 'text-gray-600'}`}
                 >
                   <p
                   data-aos="fade-up"
                   data-aos-delay="200"
                   >
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus omnis quisquam excepturi dicta aut, et, vero sit ipsa, eius rerum exercitationem officia! Omnis
+                    {paragraf[0]}
                     </p>
                   <p
                   data-aos="fade-up"
                   data-aos-delay="300"
                   >
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus omnis quisquam excepturi dicta aut, et, vero sit ipsa, eius rerum exercitationem officia! Omnis
+                    {paragraf[1]}
                     </p>
                   <p
                   data-aos="fade-up"
                   data-aos-delay="400"
                   >
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus omnis quisquam excepturi dicta aut, et, vero sit ipsa, eius rerum exercitationem officia! Omnis
+                    {paragraf[2]}
                     </p>
                 </div>
 

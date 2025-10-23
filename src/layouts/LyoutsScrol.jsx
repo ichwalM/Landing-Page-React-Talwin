@@ -1,4 +1,4 @@
-import {React,useState} from 'react'
+import React from 'react'
 import HomeSection from '../pages/HomeSection'
 import AboutSection from '../pages/AboutSection'
 import SkillSection from '../pages/SkillSection'
@@ -8,7 +8,7 @@ import ContactPage from '../pages/ContactPage'
 
 const LyoutsScrol = ({isDark}) => {
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen scroll-smooth'>
         <HomeSection 
         id="home"
         isDark={isDark}
