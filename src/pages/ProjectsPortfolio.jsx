@@ -30,7 +30,7 @@ const ProjectsPortfolio = ({isDark, id}) => {
             <div className="container mx-auto px-4 py-12">
                 {/* Header */}
                 <div className="flex justify-between items-center mb-8">
-                    <div data-aos="fade-right">
+                    <div data-aos="fade-up">
                         <h1 className={`text-4xl md:text-5xl font-bold mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
                             Project Portfolio
                         </h1>

@@ -5,10 +5,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import './App.css';
 import LyoutsScrol from "./layouts/LyoutsScrol";
+import LiquidEther from './LiquidEther';
 
 function App() {
   const [activeTab, setActiveTab] = useState("home");
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(() => {
+    const savedMode = localStorage.getItem("theme");
+    return savedMode ? JSON.parse(savedMode) : true;
+  });
+
+  useEffect(() => {
+    localStorage.setItem("theme", JSON.stringify(isDark));
+  }, [isDark]);
+
+
   useEffect(() => {
     AOS.init({
       offset: 120,
@@ -28,8 +38,7 @@ function App() {
       isDark={isDark}
       setIsDark={setIsDark}
       />
-        <main>
-          {/* <Layout page={activeTab} /> */}
+        <main className="">
           <LyoutsScrol 
           isDark={isDark}
           />

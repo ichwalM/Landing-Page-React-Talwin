@@ -99,7 +99,7 @@ const ContactPage = ({isDark, id}) => {
             <div className="container mx-auto px-4 py-12">
                 {/* Header */}
                 <div className="flex justify-between items-center mb-12">
-                    <div data-aos="fade-right">
+                    <div data-aos="fade-up">
                         <h1 className={`text-4xl md:text-5xl font-bold mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
                             Hubungi Saya
                         </h1>
@@ -112,7 +112,7 @@ const ContactPage = ({isDark, id}) => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
                     {/* Contact Info Section */}
                     <div className="space-y-8">
-                        <div className="space-y-4" data-aos="fade-right">
+                        <div className="space-y-4" data-aos="fade-up">
                             <h2 className={`text-2xl font-bold mb-6 ${isDark ? 'text-white' : 'text-gray-900'}`}>
                                 Informasi Kontak
                             </h2>
@@ -122,7 +122,7 @@ const ContactPage = ({isDark, id}) => {
                                     href={info.link}
                                     className={`block p-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-xl ${isDark ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'
                                         }`}
-                                    data-aos="fade-right"
+                                    data-aos="fade-up"
                                     data-aos-delay={index * 100}
                                 >
                                     <div className="flex items-center gap-4">
@@ -142,7 +142,7 @@ const ContactPage = ({isDark, id}) => {
                             ))}
                         </div>
 
-                        <div data-aos="fade-right" data-aos-delay="300">
+                        <div data-aos="fade-up" data-aos-delay="300">
                             <h2 className={`text-2xl font-bold mb-6 ${isDark ? 'text-white' : 'text-gray-900'}`}>
                                 Ikuti Saya
                             </h2>
@@ -170,7 +170,7 @@ const ContactPage = ({isDark, id}) => {
                         <div
                             className={`p-6 rounded-xl ${isDark ? 'bg-gradient-to-br from-blue-600 to-purple-600' : 'bg-gradient-to-br from-blue-500 to-purple-500'
                                 } text-white`}
-                            data-aos="fade-right"
+                            data-aos="fade-up"
                             data-aos-delay="400"
                         >
                             <h3 className="text-xl font-bold mb-2">💡 Fun Fact</h3>
@@ -181,7 +181,7 @@ const ContactPage = ({isDark, id}) => {
                     </div>
 
                     {/* Contact Form */}
-                    <div data-aos="fade-left">
+                    <div data-aos="fade-up">
                         <div className={`p-8 rounded-xl shadow-xl ${isDark ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'
                             }`}>
                             <h2 className={`text-2xl font-bold mb-6 ${isDark ? 'text-white' : 'text-gray-900'}`}>

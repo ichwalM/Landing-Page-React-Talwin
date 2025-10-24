@@ -1,77 +1,18 @@
 import { GraduationCap, Briefcase, Calendar, MapPin } from 'lucide-react';
 import HeroTitle from '../components/heroTitle';
+import { useEffect, useState } from 'react';
 
 const ExperienceTimeline = ({isDark, id}) => {
-    // const [isDark, setIsDark] = useState(true);
+    
+    const [experiences, setExperiences] = useState([]);
+    
+    useEffect(() => {
+        fetch('/api/experiences.json')
+            .then((res) => res.json())
+            .then((data) => setExperiences(data))
+            .catch((err) => console.log('error menagmbil data experiences : ', err));
+    },[]);
 
-    const experiences = [
-        {
-            id: 1,
-            type: 'education',
-            title: 'SMK Negeri 1 Luwu Timur',
-            subtitle: 'Teknik Komputer dan Jaringan',
-            period: '2020 - 2023',
-            location: 'Luwu Timur, Sulawesi Selatan',
-            description:
-                'Mempelajari dasar-dasar jaringan komputer, programming, dan sistem operasi. Aktif dalam organisasi OSIS dan tim networking sekolah.',
-            achievements: ['Berhasil Membangun Server Local Berbasis Linux Debian'],
-        },
-        {
-            id: 2,
-            type: 'internship',
-            title: 'PT. TKJ CLub Makassar',
-            subtitle: 'Netwrok Administrator',
-            period: 'jun 2022 - november 2022',
-            location: 'Makassar, Sulawesi Selatan',
-            description:
-                'Magang sebagai IT Support, membantu troubleshooting hardware dan software, serta membangun server berbasis Linux Debian.',
-            achievements: [
-                'Merancang Topologi Jaringan',
-                'impementasi Router Server',
-                'impementasi DNS Server',
-                'impementasi Web Server Apache',
-                'impementasi Mail Server',
-                'impementasi Proxy Server',
-                'impementasi File/Samba Server',
-                'impementasi SNMP Munin Munitoring',
-                'impementasi DHCP Server',
-                'Implementasi Router Mikrotik'
-            ],
-        },
-        {
-            id: 3,
-            type: 'internship',
-            title: 'PT Telkom Prima Cipta Certifia',
-            subtitle: 'Junior Network Administrator',
-            period: 'Dec 2022 - Jan 2023',
-            location: 'Online',
-            description:
-                'Mengembangkan Dan Merancang Jaringan.',
-            achievements: [
-                'Merancang Pengalamatan Jaringan',
-                'Memasang Jaringan Nirkabel',
-                'Menkonfigurasi Switch Pada Jaringan',
-                'Mengkonfigurasi Routing Pada Perangkat Jaringan dalam Satu Autonomous System',
-                'Mengkonfigurasi Routing Pada Perangkat Jaringan Antar Autonomous'
-            ],
-        },
-        {
-            id: 4,
-            type: 'education',
-            title: 'Universitas Muslim Indonesia',
-            subtitle: 'Fakultas Ilmu Komputer / Teknik Informatika',
-            period: '2023 - Sekarang',
-            location: 'Makassar, Sulawesi Selatan',
-            description:
-                'Fokus pada pengembangan web dan Jaringan Komputer. Aktif dalam komunitas programming dan berbagai project kelompok.',
-            achievements: [
-                'IPK 3.89',
-                'GDSC Member 2023 - 2024',
-                'DSC Member 2024 - 2025',
-                'Asisten Laboratorium Fakultas Ilmu Komputer 2025 - Sekarang'
-            ],
-        },
-    ];
 
     // Komponen Card
     const Card = ({ exp, isDark }) => (
@@ -111,7 +52,7 @@ const ExperienceTimeline = ({isDark, id}) => {
     );
 
     return (
-        <section id={id} className={`min-h-screen overflow-x-hidden transition-colors duration-500 ${isDark ? 'bg-gray-900' : 'bg-blue-50'}`}>
+        <section id={id} className={`min-h-screen transition-colors duration-500 ${isDark ? 'bg-gray-900' : 'bg-blue-50'}`}>
             <div className="container mx-auto px-4 py-12">
                 <div className="flex justify-between items-center mb-12">
                     <div data-aos="fade-up" className="text-right">

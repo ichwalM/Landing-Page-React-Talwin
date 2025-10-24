@@ -3,28 +3,21 @@ import { ReactTyped } from "react-typed";
 import HeroIcon from '../components/HeroIcon'
 
 function HomeSection({isDark, id}) {
+    
     return (
         <section id={id} className={`pb-10 h-screen flex items-center justify-center transition-colors duration-500 ${isDark ? 'bg-gray-900' : 'bg-blue-50'}` }>
             <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 sm:flex-row items-center justify-between gap-10">
-                <div className="mask-b-from-20% mask-b-to-80%  block lg:hidden md:hidden">
-                    <div
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                    className="w-full max-w-lg md:h-86 bg-blue-200 rounded-2xl flex items-center justify-center text-blue-800 text-xl font-semibold">
-                        <img className="rounded" src="/images/heroProfile.png" alt="" />
-                    </div>
-                </div>
                 <div className="md:w-1/2 md:text-left">
                     <h1
                     data-aos="fade-up"
                     data-aos-delay="100"
-                    className={`text-4xl md:text-5xl font-bold mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
+                    className={`sm:text-lg md:text-5xl font-bold mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
                         Hello
                     </h1>
                     <h1
                     data-aos="fade-up"
                     data-aos-delay="200"
-                    className={`text-4xl md:text-5xl font-bold leading-tight min-h-[60px] mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}
+                    className={`text-2xl md:text-5xl font-bold leading-tight min-h-[55px] md:min-h-[60px] mb-0 md:mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}
                     >
                         <ReactTyped
                             className="hidden-typed-cursor"
@@ -38,7 +31,7 @@ function HomeSection({isDark, id}) {
                     <p 
                     data-aos="fade-up"
                     data-aos-delay="300"
-                    className={`text-lg mb-6 ${isDark ? 'text-white' : 'text-gray-600'}`}
+                    className={`text-sm mb-6 ${isDark ? 'text-white' : 'text-gray-600'}`}
                     >
                         Junior Frontend Developer and junior network administrator with a passion for creating useful and secure systems.
                     </p>
