@@ -8,4 +8,4 @@ RUN npm run build
 
 # Stage production
 FROM nginx:alpine
-COPY --from=build /usr/src/app/build /var/www/ichwal_app
+COPY --from=build /usr/src/app/dist /var/www/ichwal_app
