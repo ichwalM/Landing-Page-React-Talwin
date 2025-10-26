@@ -7,7 +7,4 @@ import flowbiteReact from "flowbite-react/plugin/vite";
 export default defineConfig({
   base: '/ichwal/',
   plugins: [react(), tailwindcss(), flowbiteReact()],
-  build: {
-    outDir: 'dist',
-  },
 })

@@ -17,7 +17,7 @@
     },
     {
         "id": 2,
-        "title": "Imunisasi System app",
+        "title": "/Imunisasi System app",
         "category": "web",
         "description": "System Manajement Imunisasi untuk pendataan dan pemberitahuan Imunisasi.",
         "tech": [
@@ -42,7 +42,7 @@
             "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
             "https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"
         ],
-        "image": "pariwisata-leang2.png",
+        "image": "/pariwisata-leang2.png",
         "date": "Mar 2025",
         "github": "#",
         "demo": "#"

@@ -10,7 +10,7 @@ const CardProjects = ({project, index, isDark}) => {
         >
             {/* Project Image/Icon */}
             <div className={`h-48 bg-gradient-to-br flex items-center justify-center`}>
-                <img src={`${import.meta.env.BASE_URL}images/projects/${project.image}`} className='mb-10 object-cover m-5' />
+                <img src={`${import.meta.env.BASE_URL}images/projects${project.image}`} className='mb-10 object-cover m-5' />
             </div>
 
             {/* Project Content */}
