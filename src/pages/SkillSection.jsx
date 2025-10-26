@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroCard from '../components/HeroCard';
-import HeroTitle from '../components/heroTitle';
+import HeroTitle from '../components/HeroTitle';
 const SkillSection = ({ className }) => {
     return (
         <section id='skill' className="min-h-screen pt-5 bg-blue-50">

@@ -5,7 +5,7 @@ import SkillSection from '../pages/SkillSection'
 import ExperienceTimeline from '../pages/ExperienceTimeline'
 import ProjectsPortfolio from '../pages/ProjectsPortfolio'
 import ContactPage from '../pages/ContactPage'
-
+import Footer from '../pages/Footer';
 const LyoutsScrol = ({isDark}) => {
   return (
     <div className='scroll-smooth min-h-screen mx-auto'>
@@ -26,6 +26,9 @@ const LyoutsScrol = ({isDark}) => {
         />
         <ContactPage 
         id="contact"
+        isDark={isDark}
+        />
+        <Footer
         isDark={isDark}
         />
     </div>

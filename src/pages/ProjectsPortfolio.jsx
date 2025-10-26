@@ -36,7 +36,7 @@ const ProjectsPortfolio = ({isDark, id}) => {
                             Project Portfolio
                         </h1>
                         <p className={`text-lg ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                            Kumpulan project yang telah diselsaikan
+                            Kumpulan project yang telah diselesaikan
                         </p>
                     </div>
                 </div>

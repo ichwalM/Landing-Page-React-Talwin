@@ -4,7 +4,7 @@ import { FaCode, FaBars, FaTimes, FaHome, FaUser, FaProjectDiagram, FaEnvelope }
 const navLinks = [
     { name: "Home", tab: "home", icon: FaHome },
     { name: "About", tab: "about", icon: FaUser },
-    {name: "Experience", tab: "experience", icon: FaCode },
+    { name: "Experience", tab: "experience", icon: FaCode },
     { name: "Projects", tab: "projects", icon: FaProjectDiagram },
     { name: "Contact", tab: "contact", icon: FaEnvelope },
 ];
@@ -43,19 +43,19 @@ const Header = ({ activeTab, setActiveTab, isDark, setIsDark }) => {
                     
                     <button
                         onClick={() => setIsDark(!isDark)}
-                        className="hidden md:block p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 transition-all duration-300"
+                        className={`cursor-pointer hidden md:block p-2 ${isDark ? 'text-yellow-500 hover:bg-gray-100 hover:text-gray-900' : 'text-gray-900 hover:bg-gray-900 hover:text-white'} rounded-lg transition-all duration-300`}
                     >
                         <span className={`inline-block transition-transform duration-500 ${isDark ? 'rotate-180' : 'rotate-0'}`}>
-                            {isDark ? '☀️' : '🌙'}
+                            {isDark ? '☀︎' : '⏾'}
                         </span>
                     </button>
 
                     <button
                         onClick={() => setIsDark(!isDark)}
-                        className="md:hidden p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 transition-all duration-300"
+                        className={`md:hidden p-2 rounded-lg ${isDark ? 'text-gray-400 hover:bg-gray-700' : 'text-gray-500 hover:bg-gray-100'} transition-all duration-300`}
                     >
                         <span className={`inline-block transition-transform duration-500 ${isDark ? 'rotate-180' : 'rotate-0'}`}>
-                            {isDark ? '☀️' : '🌙'}
+                            {isDark ? '☀︎' : '⏾'}
                         </span>
                     </button>
 

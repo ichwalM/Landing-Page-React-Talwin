@@ -8,10 +8,11 @@ const  AboutSection = ({isDark, id}) => {
       "My curiosity doesn't stop at writing code. I believe modern developers must understand the infrastructure where their applications run. Therefore, I also delve into system administration, including containerization with Docker, Ubuntu server management, and Proxmox virtualization. My additional expertise in MikroTik and Cisco network configuration gives me a comprehensive, end-to-end understanding of a digital system.",
       "This portfolio is part of my personal branding, documenting the projects I have worked on. I am always enthusiastic about learning new things and am currently open to challenging freelance collaborations.",
   ];
+
   return (
     <section 
     id={id}
-    className={`min-h-screen pt-5 transition-colors duration-500 ${isDark ? 'bg-gray-900' : 'bg-blue-50'}`}
+    className={`min-h-screen pt-0 md:pt-5 transition-colors duration-500 ${isDark ? 'bg-gray-900' : 'bg-blue-50'}`}
     >
       <div className="container mx-auto px-4 py-12">
         <HeroTitle isDark={isDark} heading="About"/>
@@ -38,11 +39,11 @@ const  AboutSection = ({isDark, id}) => {
                 <h2
                 data-aos="fade-up"
                 data-aos-delay="100"
-                className={`text-4xl font-bold mb-6 ${isDark ? 'text-white' : 'text-gray-900'}`}>
+                className={`text-xl md:text-4xl font-bold mb-3 ${isDark ? 'text-white' : 'text-gray-900'}`}>
                   Hi, I'm Ichwal
                 </h2>
                 <div
-                  className={`text-md leading-relaxed space-y-4 text-justify ${isDark ? 'text-gray-300' : 'text-gray-600'}`}
+                  className={`text-sm md:text-md leading-relaxed space-y-4 text-justify ${isDark ? 'text-gray-300' : 'text-gray-900'}`}
                 >
                   <p
                   data-aos="fade-up"
@@ -86,18 +87,22 @@ const  AboutSection = ({isDark, id}) => {
                 <div
                 data-aos="fade-up"
                 data-aos-delay="500"
-                  className="rounded-xl p-4 text-center shadow-xl hover:shadow-xl transition-shadow duration-300"
+                  className="rounded-xl flex justify-center items-center p-4 text-center shadow-xl hover:shadow-xl transition-shadow duration-300"
                 >
-                  <h3 className="font-bold text-lg">Informatics Engineering</h3>
-                  <p className="text-xl font-semibold">2023-2025</p>
+                  <div>
+                    <h3 className="font-bold text-sm md:text-lg">Informatics Engineering</h3>
+                    <p className="sm:text-sm md:text-xl font-semibold">2023-2025</p>
+                  </div>
                 </div>
                 <div
                 data-aos="fade-up"
                 data-aos-delay="500"
-                  className="rounded-xl p-4 text-center shadow-xl hover:shadow-xl transition-shadow duration-300"
+                  className="flex justify-center items-center rounded-xl p-4 text-center shadow-xl hover:shadow-xl transition-shadow duration-300"
                 >
-                  <h3 className="font-bold text-lg">GPA</h3>
-                  <p className="text-xl font-bold">3.89/4.00</p>
+                  <div>
+                    <h3 className="font-bold text-md md:text-lg">GPA</h3>
+                    <p className="text-md md:text-xl font-bold">3.89/4.00</p>
+                  </div>
                 </div>
               </div>
             </article>

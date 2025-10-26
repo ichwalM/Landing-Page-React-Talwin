@@ -1,5 +1,5 @@
 import { GraduationCap, Briefcase, Calendar, MapPin } from 'lucide-react';
-import HeroTitle from '../components/heroTitle';
+import HeroTitle from '../components/HeroTitle';
 import { useEffect, useState } from 'react';
 
 const ExperienceTimeline = ({isDark, id}) => {
@@ -17,7 +17,7 @@ const ExperienceTimeline = ({isDark, id}) => {
     // Komponen Card
     const Card = ({ exp, isDark }) => (
         <div
-            className={`p-6 rounded-xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-105 ${isDark ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'}`}
+            className={`p-3 md:p-6 rounded-xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-105 ${isDark ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'}`}
         >
             <span
                 className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-3 ${exp.type === 'education' ? 'bg-blue-500 text-white' : 'bg-green-500 text-white'
@@ -25,8 +25,8 @@ const ExperienceTimeline = ({isDark, id}) => {
             >
                 {exp.type === 'education' ? 'Pendidikan' : 'Magang'}
             </span>
-            <h3 className={`text-2xl font-bold mb-1 ${isDark ? 'text-white' : 'text-gray-900'}`}>{exp.title}</h3>
-            <h4 className={`text-lg mb-3 ${isDark ? 'text-blue-400' : 'text-blue-600'}`}>{exp.subtitle}</h4>
+            <h3 className={`text-lg md:text-2xl font-bold mb-1 ${isDark ? 'text-white' : 'text-gray-900'}`}>{exp.title}</h3>
+            <h4 className={`text-md md:text-lg mb-3 ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>{exp.subtitle}</h4>
             <div className="flex gap-4 mb-4 justify-start flex-wrap">
                 <div className="flex items-center gap-1">
                     <Calendar className={`w-4 h-4 ${isDark ? 'text-gray-400' : 'text-gray-600'}`} />
@@ -37,12 +37,12 @@ const ExperienceTimeline = ({isDark, id}) => {
                     <span className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>{exp.location}</span>
                 </div>
             </div>
-            <p className={`mb-4 ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>{exp.description}</p>
+            <p className={`text-sm md:text-md mb-4 ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>{exp.description}</p>
             <div className={`pt-4 border-t ${isDark ? 'border-gray-700' : 'border-gray-200'}`}>
                 <p className={`font-semibold mb-2 text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Pencapaian:</p>
                 <ul className="space-y-1 text-left">
                     {exp.achievements.map((achievement, i) => (
-                        <li key={i} className={`text-sm ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+                        <li key={i} className={`text-xs md:text-sm ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
                             • {achievement}
                         </li>
                     ))}
@@ -62,19 +62,25 @@ const ExperienceTimeline = ({isDark, id}) => {
                 {/* Kontainer Timeline */}
                 <div className="relative w-full md:w-10/12 mx-auto">
                     {/* Garis Vertikal (tengah timeline) */}
-                   <div
+                    <div
                     className={`absolute top-0 bottom-0 sm:left-9 sm:ms-8 md:m-[0] md:left-1/2 w-[2px] hidden md:block transform md:-translate-x-1/2 z-0 lg:left-1/2 ${
                         isDark ? 'bg-gray-700' : 'bg-gray-300'
                     }`}
                     />
-
+                        {/* Vertical Line */}
+                        <div
+                        data-aos={'fade-up'}
+                        className={`md:hidden absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 ${
+                            isDark ? 'bg-gray-700' : 'bg-gray-300'
+                        }`} />
 
                     {/* Isi Timeline */}
                     <div className="space-y-12 md:space-y-0">
                         {experiences.map((exp, index) => (
-                            <div key={exp.id} data-aos={index % 2 === 0 ? 'fade-up' : 'fade-up'}>
+                            <div key={exp.id} data-aos={'fade-up'}>
                                 {/* MOBILE */}
                                 <div className="md:hidden flex items-start gap-4 mb-8">
+                                    
                                     <div
                                         className={`relative z-10 w-16 h-16 rounded-full flex-shrink-0 flex items-center justify-center shadow-lg ${exp.type === 'education'
                                                 ? isDark

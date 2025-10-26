@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram, Twitter, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram, CheckCircle } from 'lucide-react';
 
 const ContactPage = ({isDark, id}) => {
     const [formData, setFormData] = useState({
@@ -24,7 +24,7 @@ const ContactPage = ({isDark, id}) => {
 
             setTimeout(() => {
                 setIsSubmitted(false);
-                setFormData({
+                set ({
                     name: '',
                     email: '',
                     subject: '',
@@ -38,21 +38,21 @@ const ContactPage = ({isDark, id}) => {
         {
             icon: <Mail className="w-6 h-6" />,
             title: 'Email',
-            value: 'your.email@example.com',
+            value: 'ichwal093@gmail.com',
             link: 'mailto:your.email@example.com',
             color: 'blue'
         },
         {
             icon: <Phone className="w-6 h-6" />,
             title: 'Phone',
-            value: '+62 812-3456-7890',
+            value: '+62 822-9394-7428',
             link: 'tel:+6281234567890',
             color: 'green'
         },
         {
             icon: <MapPin className="w-6 h-6" />,
             title: 'Location',
-            value: 'Semarang, Jawa Tengah',
+            value: 'Makassar, Sulawesi Selatan',
             link: '#',
             color: 'purple'
         }
@@ -62,27 +62,21 @@ const ContactPage = ({isDark, id}) => {
         {
             icon: <Github className="w-5 h-5" />,
             name: 'GitHub',
-            link: 'https://github.com/yourusername',
+            link: 'https://github.com/ichwalM',
             color: 'gray'
         },
         {
             icon: <Linkedin className="w-5 h-5" />,
             name: 'LinkedIn',
-            link: 'https://linkedin.com/in/yourusername',
+            link: 'https://www.linkedin.com/in/ichwal/',
             color: 'blue'
         },
         {
             icon: <Instagram className="w-5 h-5" />,
             name: 'Instagram',
-            link: 'https://instagram.com/yourusername',
+            link: 'https://www.instagram.com/ichwal_mr/',
             color: 'pink'
         },
-        {
-            icon: <Twitter className="w-5 h-5" />,
-            name: 'Twitter',
-            link: 'https://twitter.com/yourusername',
-            color: 'cyan'
-        }
     ];
 
     const colorVariants = {
@@ -120,7 +114,7 @@ const ContactPage = ({isDark, id}) => {
                                 <a
                                     key={index}
                                     href={info.link}
-                                    className={`block p-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-xl ${isDark ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'
+                                    className={`block p-6 rounded-xl transition-all duration-500 hover:scale-101 hover:shadow-xl ${isDark ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'
                                         }`}
                                     data-aos="fade-up"
                                     data-aos-delay={index * 100}
@@ -211,7 +205,7 @@ const ContactPage = ({isDark, id}) => {
                                             onChange={handleChange}
                                             className={`w-full px-4 py-3 rounded-lg transition-all duration-300 focus:ring-2 focus:ring-blue-500 outline-none ${isDark ? 'bg-gray-700 text-white border border-gray-600' : 'bg-gray-50 text-gray-900 border border-gray-300'
                                                 }`}
-                                            placeholder="John Doe"
+                                            placeholder="Ichwal"
                                         />
                                     </div>
 
@@ -226,7 +220,7 @@ const ContactPage = ({isDark, id}) => {
                                             onChange={handleChange}
                                             className={`w-full px-4 py-3 rounded-lg transition-all duration-300 focus:ring-2 focus:ring-blue-500 outline-none ${isDark ? 'bg-gray-700 text-white border border-gray-600' : 'bg-gray-50 text-gray-900 border border-gray-300'
                                                 }`}
-                                            placeholder="john@example.com"
+                                            placeholder="ichwal@example.com"
                                         />
                                     </div>
 
@@ -271,35 +265,6 @@ const ContactPage = ({isDark, id}) => {
                                 </div>
                             )}
                         </div>
-                    </div>
-                </div>
-
-                <div
-                    className={`mt-12 p-8 rounded-xl text-center max-w-4xl mx-auto ${isDark ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'
-                        }`}
-                    data-aos="fade-up"
-                >
-                    <h3 className={`text-2xl font-bold mb-3 ${isDark ? 'text-white' : 'text-gray-900'}`}>
-                        Punya Project Menarik?
-                    </h3>
-                    <p className={`text-lg mb-6 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                        Saya siap membantu mewujudkan ide Anda menjadi kenyataan. Mari berdiskusi!
-                    </p>
-                    <div className="flex flex-wrap justify-center gap-4">
-                        <a
-                            href="#"
-                            className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 ${isDark ? 'bg-blue-600 text-white hover:bg-blue-700' : 'bg-blue-500 text-white hover:bg-blue-600'
-                                }`}
-                        >
-                            Download CV
-                        </a>
-                        <a
-                            href="#"
-                            className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 ${isDark ? 'bg-gray-700 text-white hover:bg-gray-600' : 'bg-gray-200 text-gray-900 hover:bg-gray-300'
-                                }`}
-                        >
-                            Lihat Portfolio
-                        </a>
                     </div>
                 </div>
             </div>
