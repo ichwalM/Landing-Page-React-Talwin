@@ -7,8 +7,8 @@ const ProjectsPortfolio = ({isDark, id}) => {
     const [projects, setProjects] = useState([]);
 
     useEffect(()=>{
-        // fetch(`${import.meta.env.BASE_URL}api/projects.json`) untuk prduction
-        fetch('api/projects.json')
+        fetch(`${import.meta.env.BASE_URL}api/projects.json`) //untuk prduction
+        // fetch('api/projects.json')
         .then((res) => res.json())
         .then((data) => setProjects(data))
         .catch((err) => console.log('gagal mengambil api : ', err));
