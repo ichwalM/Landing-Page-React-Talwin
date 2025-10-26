@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Code, Layers, Tag } from 'lucide-react';
-import CardProjects from '../components/cardProjects';
+import CardProjects from '../components/CardProjects';
 const ProjectsPortfolio = ({isDark, id}) => {
 
     const [filter, setFilter] = useState('all');
