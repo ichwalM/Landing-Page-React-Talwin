@@ -7,6 +7,7 @@ const ExperienceTimeline = ({isDark, id}) => {
     const [experiences, setExperiences] = useState([]);
     
     useEffect(() => {
+        //fetch(`${import.meta.env.BASE_URL}api/experiences.json`) //untuk production
         fetch('/api/experiences.json')
             .then((res) => res.json())
             .then((data) => setExperiences(data))
