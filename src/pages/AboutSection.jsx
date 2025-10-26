@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroTitle from '../components/heroTitle';
+import HeroTitle from '../components/HeroTitle';
 import heroAbout from '/images/heroAbout.png';
 
 const  AboutSection = ({isDark, id}) => {
