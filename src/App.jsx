@@ -5,7 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import './App.css';
 import LyoutsScrol from "./layouts/LyoutsScrol";
-import LiquidEther from './LiquidEther';
 
 function App() {
   const [activeTab, setActiveTab] = useState("home");

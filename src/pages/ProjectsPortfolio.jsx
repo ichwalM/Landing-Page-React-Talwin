@@ -7,6 +7,7 @@ const ProjectsPortfolio = ({isDark, id}) => {
     const [projects, setProjects] = useState([]);
 
     useEffect(()=>{
+        // fetch(`${import.meta.env.BASE_URL}api/experiences.json`) untuk prduction
         fetch('api/projects.json')
         .then((res) => res.json())
         .then((data) => setProjects(data))
@@ -35,7 +36,7 @@ const ProjectsPortfolio = ({isDark, id}) => {
                             Project Portfolio
                         </h1>
                         <p className={`text-lg ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                            Kumpulan project yang telah saya kerjakan
+                            Kumpulan project yang telah diselsaikan
                         </p>
                     </div>
                 </div>

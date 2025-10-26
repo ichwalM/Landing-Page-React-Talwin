@@ -1,5 +1,7 @@
 import React from 'react';
 import HeroTitle from '../components/heroTitle';
+import heroAbout from '/images/heroAbout.png';
+
 const  AboutSection = ({isDark, id}) => {
   const paragraf = [
       "As an Informatics Engineering student, I am driven by a deep passion for solving problems through technology. I currently work as a freelance Full Stack Web Developer, specializing in the Laravel ecosystem for the backend and React.js for the frontend. I am obsessed with a good developer experience, which is why I consistently rely on Tailwind CSS for rapid styling and MySQL for efficient data management.",
@@ -22,7 +24,7 @@ const  AboutSection = ({isDark, id}) => {
               data-aos-delay="200"
               className="relative rounded-2xl overflow-hidden shadow-2xl transform "
               >
-                  <img src="/images/heroAbout.png" alt="" />
+                  <img src={heroAbout} alt="" />
                 <div
                   className="absolute inset-0 border-4 rounded-2xl pointer-events-none border-gray-900"
                 ></div>

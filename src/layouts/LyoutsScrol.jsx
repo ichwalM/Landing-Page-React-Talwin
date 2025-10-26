@@ -8,7 +8,7 @@ import ContactPage from '../pages/ContactPage'
 
 const LyoutsScrol = ({isDark}) => {
   return (
-    <div className='scroll-smooth min-h-screen'>
+    <div className='scroll-smooth min-h-screen mx-auto'>
         <HomeSection 
         id="home"
         isDark={isDark}

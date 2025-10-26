@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import HeroIcon from '../components/HeroIcon'
+import homeImage from '/images/heroProfile.png'
 
 function HomeSection({isDark, id}) {
     
@@ -44,12 +45,12 @@ function HomeSection({isDark, id}) {
                         Contact Me
                     </button>
                 </div>
-                <div className="xl:mask-l-from-40% mask-l-to-100% bg-[url(/img/mountains.jpg)] rounded hidden md:block ">
+                <div className="xl:mask-l-from-40% mask-l-to-100% rounded hidden md:block ">
                     <div
                     data-aos="fade-up"
                     data-aos-delay="250"
                     className="w-full max-w-lg md:bg-blue-200 rounded-lg flex items-center justify-center text-blue-800 text-xl font-semibold">
-                        <img className="rounded" src="/images/heroProfile.png" alt="" />
+                        <img className="rounded" src={homeImage} alt="" />
                     </div>
                 </div>
             </div>
