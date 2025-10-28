@@ -17,7 +17,7 @@
     },
     {
         "id": 2,
-        "title": "/Imunisasi System app",
+        "title": "Imunisasi System app",
         "category": "web",
         "description": "System Manajement Imunisasi untuk pendataan dan pemberitahuan Imunisasi.",
         "tech": [
@@ -26,7 +26,7 @@
             "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white",
             "https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"
         ],
-        "image": "vaksinasi.png",
+        "image": "/vaksinasi.png",
         "date": "Jan 2025",
         "github": "https://github.com/ichwalM/Imunisasi-System-App-.git",
         "demo": "#"
