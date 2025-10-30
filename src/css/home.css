@@ -1,0 +1,132 @@
+@keyframes float {
+    0%,
+    100% {
+    transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+    transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+@keyframes wave {
+    0%,
+    100% {
+    transform: rotate(0deg);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+    transform: rotate(14deg);
+    }
+    20%,
+    40%,
+    60% {
+    transform: rotate(-8deg);
+    }
+    80% {
+    transform: rotate(10deg);
+    }
+    90% {
+    transform: rotate(-4deg);
+    }
+}
+
+@keyframes blink {
+    0%,
+    100% {
+    opacity: 1;
+    }
+    50% {
+    opacity: 0;
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+    opacity: 0;
+    transform: translateY(30px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+    opacity: 0;
+    transform: translateX(30px);
+    }
+    to {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+    opacity: 0;
+    transform: translateX(-30px);
+    }
+    to {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+@keyframes spin-slow {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce-slow {
+    0%,
+    100% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-10px);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-wave {
+    animation: wave 2s ease-in-out infinite;
+}
+
+.animate-blink {
+    animation: blink 1s step-end infinite;
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in-right {
+    animation: fade-in-right 1s ease-out forwards;
+}
+
+.animate-slide-in-left {
+    animation: slide-in-left 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+    animation: fade-in-up 1s ease-out 0.3s forwards;
+    opacity: 0;
+}
+
+.animate-spin-slow {
+    animation: spin-slow 20s linear infinite;
+}
+
+.animate-bounce-slow {
+    animation: bounce-slow 3s ease-in-out infinite;
+}
