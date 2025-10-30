@@ -9,13 +9,20 @@ import LyoutsScrol from "./layouts/LyoutsScrol";
 function App() {
   const [activeTab, setActiveTab] = useState("home");
   const [isDark, setIsDark] = useState(() => {
-    const savedMode = localStorage.getItem("theme");
-    return savedMode ? JSON.parse(savedMode) : true;
+    try {
+      const savedMode = localStorage.getItem("theme");
+      if (savedMode === null) return true; 
+      const parsed = JSON.parse(savedMode);
+      return typeof parsed === "boolean" ? parsed : savedMode === "dark";
+    } catch (e) {
+      const fallback = localStorage.getItem("theme");
+      return fallback === "dark" || true; 
+    }
   });
 
-  useEffect(() => {
-    localStorage.setItem("theme", JSON.stringify(isDark));
-  }, [isDark]);
+useEffect(() => {
+  localStorage.setItem("theme", JSON.stringify(isDark));
+}, [isDark]);
 
 
   useEffect(() => {
