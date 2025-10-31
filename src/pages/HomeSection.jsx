@@ -65,8 +65,7 @@ function HomeSection({ isDark, id }) {
     return (
         <section
             id={id}
-            className={`relative pb-10 min-h-screen flex items-center justify-center overflow-hidden transition-colors duration-500 ${isDark ? "bg-gray-900" : "bg-gradient-to-br from-blue-50 via-blue-50 to-pink-50"
-                }`}
+            className={`pb-10 min-h-screen flex items-center justify-center`}
         >
             {/* Animated Background Elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -144,7 +143,7 @@ function HomeSection({ isDark, id }) {
 
                         {/* Typing Animation */}
                         <h1
-                            className={`select-none text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight min-h-[50px] md:min-h-[70px] ${
+                            className={`select-none mb-0 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight min-h-[50px] md:min-h-[70px] ${
                                 isDark
                                     ? "text-blue-50"
                                     : "text-gray-900"
@@ -156,7 +155,7 @@ function HomeSection({ isDark, id }) {
 
                         {/* Description */}
                         <p
-                            className={`text-base sm:text-lg md:text-xl max-w-xl md:mx-0 animate-fade-in ${isDark ? "text-gray-300" : "text-gray-700"
+                            className={`text-base sm:text-sm md:text-xl max-w-xl md:mx-0 animate-fade-in ${isDark ? "text-gray-300" : "text-gray-700"
                                 }`}
                         >
                             Junior Full Stack Web Developer and Junior Network Administrator with a
@@ -186,16 +185,16 @@ function HomeSection({ isDark, id }) {
                         </div>
 
                         {/* CTA Button */}
-                        <button
+                        {/* <button
                             className={`group relative px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-xl hover:shadow-2xl animate-fade-in-up ${
                                 isDark
                                 ? "bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white" 
                                 : "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white hover:text-gray-700" 
                             }`}
                         >
-                            {/* <span className="relative z-10">Contact Me</span>
-                            <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300" /> */}
-                        </button>
+                            <span className="relative z-10">Contact Me</span>
+                            <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+                        </button> */}
                     </div>
 
                     {/* Image Section */}
