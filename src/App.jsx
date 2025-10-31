@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import './App.css';
 import LyoutsScrol from "./layouts/LyoutsScrol";
+import Footer from "./pages/Footer";
 
 function App() {
   const [activeTab, setActiveTab] = useState("home");
@@ -50,6 +51,9 @@ useEffect(() => {
           isDark={isDark}
           />
         </main>
+        <Footer
+        isDark={isDark}
+        />
     </div>
   );
 }
