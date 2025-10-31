@@ -44,7 +44,7 @@ useEffect(() => {
       isDark={isDark}
       setIsDark={setIsDark}
       />
-        <main className="">
+        <main className="mx-auto mt-16">
           <LyoutsScrol 
           isDark={isDark}
           />
@@ -54,3 +54,4 @@ useEffect(() => {
 }
 
 export default App;
+  

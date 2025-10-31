@@ -8,7 +8,8 @@ import ContactPage from '../pages/ContactPage'
 import Footer from '../pages/Footer';
 const LyoutsScrol = ({isDark}) => {
   return (
-    <div className='scroll-smooth min-h-screen mx-auto'>
+    // <div className='scroll-smooth min-h-screen'>
+    <>
         <HomeSection 
         id="home"
         isDark={isDark}
@@ -31,7 +32,8 @@ const LyoutsScrol = ({isDark}) => {
         <Footer
         isDark={isDark}
         />
-    </div>
+    {/* </div> */}
+    </>
   )
 }
 
