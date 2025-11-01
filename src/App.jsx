@@ -51,6 +51,7 @@ useEffect(() => {
           isDark={isDark}
           />
         </main>
+        {/* footer */}
         <Footer
         isDark={isDark}
         />
