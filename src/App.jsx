@@ -45,7 +45,7 @@ useEffect(() => {
       isDark={isDark}
       setIsDark={setIsDark}
       />
-        <main className={`mx-16 mt-16 ${isDark ? "bg-gray-900" : "bg-gradient-to-br from-blue-50 via-blue-50 to-pink-50"}`}>
+        <main className={`m-0 md:mx-16 mt-16 ${isDark ? "bg-gray-900" : "bg-gradient-to-br from-blue-50 via-blue-50 to-pink-50"}`}>
 
           <LyoutsScrol 
           isDark={isDark}

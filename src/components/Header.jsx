@@ -39,13 +39,13 @@ const Header = ({ activeTab, setActiveTab, isDark, setIsDark }) => {
                     <span className={`text-xl font-extrabold ${isDark ? 'text-white' : 'text-gray-800'}`}>My Portofolio</span>
                 </a>
 
-                <div className="flex items-center md:order-2 space-x-2 rtl:space-x-reverse">
+                <div className="flex items-center md:order-2 space-x-2 rtl:space-x-reverse ">
                     
                     <button
                         onClick={() => setIsDark(!isDark)}
                         className={`cursor-pointer hidden md:block p-2 ${isDark ? 'text-yellow-500 hover:bg-gray-100 hover:text-gray-900' : 'text-gray-900 hover:bg-gray-900 hover:text-white'} rounded-lg transition-all duration-300`}
                     >
-                        <span className={`inline-block transition-transform duration-500 ${isDark ? 'rotate-180' : 'rotate-0'}`}>
+                        <span className={`inline-block hover:rotate-90 transition-transform-all duration-500 ${isDark ? 'rotate-180' : 'rotate-0'}`}>
                             {isDark ? '☀︎' : '⏾'}
                         </span>
                     </button>
@@ -54,7 +54,7 @@ const Header = ({ activeTab, setActiveTab, isDark, setIsDark }) => {
                         onClick={() => setIsDark(!isDark)}
                         className={`md:hidden p-2 rounded-lg ${isDark ? 'text-gray-400 hover:bg-gray-700' : 'text-gray-500 hover:bg-gray-100'} transition-all duration-300`}
                     >
-                        <span className={`inline-block transition-transform duration-500 ${isDark ? 'rotate-180' : 'rotate-0'}`}>
+                        <span className={`inline-block hover:rotate-90 transition-transform-all duration-500 ${isDark ? 'rotate-180' : 'rotate-0'}`}>
                             {isDark ? '☀︎' : '⏾'}
                         </span>
                     </button>
