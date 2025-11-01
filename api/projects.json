@@ -1,0 +1,95 @@
+[
+    {
+        "id": 1,
+        "title": "Fikom Risearch App",
+        "category": "web",
+        "description": "Paltform Pendataan Penelitian Dan Publikasi Dosen Fakultas Ilmu Komputer Universitas Muslim Indonesia",
+        "tech": [
+            "https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white",
+            "https://img.shields.io/badge/Alpine%20JS-8BC0D0?style=for-the-badge&logo=alpinedotjs&logoColor=black",
+            "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
+            "https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"
+        ],
+        "image": "/riset-fikom.png",
+        "date": "September 2025",
+        "github": "https://github.com/ichwalM/fikom_research_app.git",
+        "demo": "#"
+    },
+    {
+        "id": 2,
+        "title": "Imunisasi System app",
+        "category": "web",
+        "description": "System Manajement Imunisasi untuk pendataan dan pemberitahuan Imunisasi.",
+        "tech": [
+            "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+            "https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white",
+            "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white",
+            "https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"
+        ],
+        "image": "/vaksinasi.png",
+        "date": "Jan 2025",
+        "github": "https://github.com/ichwalM/Imunisasi-System-App-.git",
+        "demo": "#"
+    },
+    {
+        "id": 3,
+        "title": "System Catalog Wisata Leang-Leang",
+        "category": "web",
+        "description": "System Catalog Objek dan Wilayah Pariwisata Leang leang maros dan menyediakan qr-code untuk mengetahui detail dari sebuah objek yang ada dalam gua",
+        "tech": [
+            "https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white",
+            "https://img.shields.io/badge/Alpine%20JS-8BC0D0?style=for-the-badge&logo=alpinedotjs&logoColor=black",
+            "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
+            "https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"
+        ],
+        "image": "/pariwisata-leang2.png",
+        "date": "Mar 2025",
+        "github": "#",
+        "demo": "#"
+    },
+    {
+        "id": 4,
+        "title": "Portfolio Website",
+        "category": "web",
+        "description": "Website portfolio pribadi dengan animasi modern, dark mode, dan responsive design.",
+        "tech": [
+            "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+            "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+        ],
+        "image": "/portfolio.png",
+        "date": "Oct 2025",
+        "github": "#",
+        "demo": "#"
+    },
+    {
+        "id": 5,
+        "title": "Monitoring Zabbix Server SNMP",
+        "category": "network",
+        "description": "Sebuah Server berbasis ubuntu 24.04 untuk memonitoring kinerja jaringan .",
+        "tech": [
+            "https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white",
+            "https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white",
+            "https://img.shields.io/badge/Apache--2.0-A81D33?style=for-the-badge"
+        ],
+        "image": "/zabbix-server.png",
+        "date": "Sep 2025",
+        "github": "#",
+        "demo": "#"
+    },
+    {
+        "id": 6,
+        "title": "Web Server",
+        "category": "network",
+        "description": "Sebuah virtualisasi Server untuk menyediakan layanan web server berbasis Ubuntu dan Docker serta Ngnx",
+        "tech": [
+            "https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white",
+            "https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white",
+            "https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white",
+            "https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white"
+        ],
+        "image": "/web-server.png",
+        "date": "Sep 2025",
+        "github": "#",
+        "demo": "#"
+    }
+]

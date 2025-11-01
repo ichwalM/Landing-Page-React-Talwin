@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "type": "education",
+        "title": "SMK Negeri 1 Luwu Timur",
+        "subtitle": "Teknik Komputer dan Jaringan",
+        "period": "2020 - 2023",
+        "location": "Luwu Timur, Sulawesi Selatan",
+        "description": "Mempelajari dasar-dasar jaringan komputer, programming, dan sistem operasi. Aktif dalam organisasi OSIS dan tim networking sekolah.",
+        "achievements": [
+            "Berhasil Membangun Server Local Berbasis Linux Debian"
+        ]
+    },
+    {
+        "id": 2,
+        "type": "internship",
+        "title": "PT. TKJ Club Makassar",
+        "subtitle": "Network Administrator",
+        "period": "Jun 2022 - November 2022",
+        "location": "Makassar, Sulawesi Selatan",
+        "description": "Magang sebagai IT Support, membantu troubleshooting hardware dan software, serta membangun server berbasis Linux Debian.",
+        "achievements": [
+            "Merancang Topologi Jaringan",
+            "Implementasi Router Server",
+            "Implementasi DNS Server",
+            "Implementasi Web Server Apache",
+            "Implementasi Mail Server",
+            "Implementasi Proxy Server",
+            "Implementasi File/Samba Server",
+            "Implementasi SNMP Munin Monitoring",
+            "Implementasi DHCP Server",
+            "Implementasi Router Mikrotik"
+        ]
+    },
+    {
+        "id": 3,
+        "type": "internship",
+        "title": "PT Telkom Prima Cipta Certifia",
+        "subtitle": "Junior Network Administrator",
+        "period": "Dec 2022 - Jan 2023",
+        "location": "Online",
+        "description": "Mengembangkan dan merancang jaringan.",
+        "achievements": [
+            "Merancang Pengalamatan Jaringan",
+            "Memasang Jaringan Nirkabel",
+            "Mengkonfigurasi Switch Pada Jaringan",
+            "Mengkonfigurasi Routing Pada Perangkat Jaringan dalam Satu Autonomous System",
+            "Mengkonfigurasi Routing Pada Perangkat Jaringan Antar Autonomous"
+        ]
+    },
+    {
+        "id": 4,
+        "type": "education",
+        "title": "Universitas Muslim Indonesia",
+        "subtitle": "Fakultas Ilmu Komputer / Teknik Informatika",
+        "period": "2023 - Sekarang",
+        "location": "Makassar, Sulawesi Selatan",
+        "description": "Fokus pada pengembangan web dan Jaringan Komputer. Aktif dalam komunitas programming dan berbagai project kelompok.",
+        "achievements": [
+            "IPK 3.89",
+            "GDSC Member 2023 - 2024",
+            "DSC Member 2024 - 2025",
+            "Asisten Laboratorium Fakultas Ilmu Komputer 2025 - Sekarang"
+        ]
+    }
+]
